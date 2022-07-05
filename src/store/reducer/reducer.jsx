@@ -1,7 +1,9 @@
+// initialState
 const initialState = {
   name: "Nitesh",
 };
 
+// reducer
 const reducer = (state = initialState, action) => {
   switch (action.type) {
     case "SET_NAME":

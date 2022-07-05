@@ -2,8 +2,13 @@ import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { changeData } from "./actions/changeData";
 const App = () => {
-  const { name } = useSelector((state) => state);
+  // pull data from the reducer.
+  const { name } = useSelector((state) => state.reducer1);
+
+  // for setting updated data into the reducer.
   const dispatch = useDispatch();
+
+  const key = useSelector((state) => state);
 
   return (
     <div>
